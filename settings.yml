@@ -1,0 +1,24 @@
+use_default_settings: true
+
+general:
+  instance_name: "LEPSA Search Engine"
+  enable_metrics: false
+
+search:
+  safe_search: 0
+  autocomplete: "google"
+  default_lang: "en-IN"
+  formats:
+    - html
+    - json
+
+server:
+  secret_key: "lepsa_searxng_ultra_secret_key_99"
+  limiter: false
+  image_proxy: true
+  port: 8080
+  bind_address: "0.0.0.0"
+
+valkey:
+  url: false
+  
