@@ -1,4 +1,4 @@
-use_default_settings: false
+use_default_settings: true
 
 general:
   instance_name: "LEPSA Search Engine"
@@ -6,6 +6,7 @@ general:
 
 search:
   safe_search: 0
+  autocomplete: ""
   default_lang: "en-IN"
   formats:
     - html
@@ -27,37 +28,32 @@ outgoing:
 
 engines:
   - name: bing
-    engine: bing
-    shortcut: bi
     disabled: false
 
   - name: yahoo
-    engine: yahoo
-    shortcut: yh
     disabled: false
 
   - name: mojeek
-    engine: mojeek
-    shortcut: mj
     disabled: false
 
   - name: wikipedia
-    engine: wikipedia
-    shortcut: wp
-    disabled: false
-
-  - name: reddit
-    engine: reddit
-    shortcut: re
     disabled: false
 
   - name: bing images
-    engine: bing_images
-    shortcut: bii
     disabled: false
 
   - name: qwant images
-    engine: qwant_images
-    shortcut: qwi
     disabled: false
+
+  - name: google
+    disabled: true
+
+  - name: google cse
+    disabled: true
+
+  - name: brave
+    disabled: true
+
+  - name: duckduckgo
+    disabled: true
     
