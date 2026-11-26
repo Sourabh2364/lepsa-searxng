@@ -6,7 +6,7 @@ general:
 
 search:
   safe_search: 0
-  autocomplete: "google"
+  autocomplete: "duckduckgo"
   default_lang: "en-IN"
   formats:
     - html
@@ -21,4 +21,50 @@ server:
 
 valkey:
   url: false
-  
+
+outgoing:
+  request_timeout: 6.0
+  useragent_suffix: "LEPSA-AI/2.0"
+
+engines:
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+    disabled: false
+
+  - name: qwant
+    engine: qwant
+    shortcut: qw
+    disabled: false
+
+  - name: mojeek
+    engine: mojeek
+    shortcut: mj
+    disabled: false
+
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+    disabled: false
+
+  - name: duckduckgo images
+    engine: duckduckgo_images
+    shortcut: ddgi
+    disabled: false
+
+  - name: qwant images
+    engine: qwant_images
+    shortcut: qwi
+    disabled: false
+
+  - name: bing images
+    engine: bing_images
+    shortcut: bii
+    disabled: false
+
+  - name: google
+    disabled: true
+
+  - name: brave
+    disabled: true
+    
