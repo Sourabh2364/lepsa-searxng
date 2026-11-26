@@ -1,4 +1,4 @@
-use_default_settings: true
+use_default_settings: false
 
 general:
   instance_name: "LEPSA Search Engine"
@@ -6,7 +6,6 @@ general:
 
 search:
   safe_search: 0
-  autocomplete: "duckduckgo"
   default_lang: "en-IN"
   formats:
     - html
@@ -23,18 +22,18 @@ valkey:
   url: false
 
 outgoing:
-  request_timeout: 6.0
-  useragent_suffix: "LEPSA-AI/2.0"
+  request_timeout: 8.0
+  max_request_timeout: 12.0
 
 engines:
-  - name: duckduckgo
-    engine: duckduckgo
-    shortcut: ddg
+  - name: bing
+    engine: bing
+    shortcut: bi
     disabled: false
 
-  - name: qwant
-    engine: qwant
-    shortcut: qw
+  - name: yahoo
+    engine: yahoo
+    shortcut: yh
     disabled: false
 
   - name: mojeek
@@ -47,14 +46,9 @@ engines:
     shortcut: wp
     disabled: false
 
-  - name: duckduckgo images
-    engine: duckduckgo_images
-    shortcut: ddgi
-    disabled: false
-
-  - name: qwant images
-    engine: qwant_images
-    shortcut: qwi
+  - name: reddit
+    engine: reddit
+    shortcut: re
     disabled: false
 
   - name: bing images
@@ -62,9 +56,8 @@ engines:
     shortcut: bii
     disabled: false
 
-  - name: google
-    disabled: true
-
-  - name: brave
-    disabled: true
+  - name: qwant images
+    engine: qwant_images
+    shortcut: qwi
+    disabled: false
     
